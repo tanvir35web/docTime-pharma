@@ -6,14 +6,28 @@ import objectRight from "../assets/images/OBJECT.png";
 
 const Search = () => {
     return (
-        <div className="h-[232px] w-full bg-docTime-blue">
-            <div className="flex flex-row justify-between">
-                <img src={vectorLeft} alt="bg vector left" />
-                <div className=" flex flex-row z-10 gap-32 justify-between m-auto">
+        <div className="h-[232px] w-full bg-docTime-blue ">
+            <div className="flex flex-row z-20 w-full">
+                <div className="flex">
+                    <img src={vectorLeft} alt="bg vector left" />
                     <img src={objectLeft} alt="bg object left" />
-                    <img className="-mr-[500px]" src={objectRight} alt="bg object right" />
                 </div>
-                <img src={vectorRight} alt="bg vector right" />
+
+                <div className="flex flex-col gap-2">
+                    <p>Buy medicines as Essentials </p>
+                    <div className="w-[830px] ">
+                        <input type="text" />
+                    </div>
+                </div>
+
+                <div className="flex">
+                    <img src={vectorRight} alt="bg vector right" />
+                    <img
+                        className="-mr-[500px]"
+                        src={objectRight}
+                        alt="bg object right"
+                    />
+                </div>
             </div>
         </div>
     );
